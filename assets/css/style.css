@@ -173,6 +173,11 @@ main {
     background-color: var(--colorPrincipal); 
 }
 
+/* Definiciones de Quienes Somos */
+.subrayado {
+    text-decoration: none
+}
+
 /* Definiciones de las tarjetas (cards) */
 .card {
     background-color: var(--colorPrincipal);
