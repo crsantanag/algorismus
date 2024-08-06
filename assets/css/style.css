@@ -1,11 +1,17 @@
 :root {
     --colorPrincipal: #437EB4;
+    --pantallaOscura: black;
+    --pantallaClara: white;
+    --letraOscura: white;
+    --letraClara: black;
+    --marcoOscuro: white;
+    --marcoClaro: black;
 }
 
 * {
     margin: 0;
     padding: 0;
-    /*border: 1px solid lightblue;*/
+    /*border: 1px solid red;*/
 }
 
 /* Aplica scroll suave dentro de la página */
@@ -14,7 +20,7 @@ html {
 }
 
 main {
-    background-color: black;
+    background-color: var(--pantallaClara);
 }
 
 .custom-margin {
@@ -24,6 +30,10 @@ main {
 
 .colorT {
     background-color: var(--colorPrincipal);
+}
+
+.color-letra {
+    color: var(--letraClara);
 }
 
 /* Define todos los tipos de letras de la familia Roboto */
@@ -100,27 +110,9 @@ main {
     font-style: italic;
 }
 
-.marco1 {
-    font-size: 48px;
-    text-shadow: 
-        -2px -2px 0 #000,  
-        2px -2px 0 #000,
-        -2px  2px 0 #000,
-        2px  2px 0 #000; /* Sombras para crear el marco */
-}
-
-.marco2 {
-    font-size: 24px;
-    text-shadow: 
-        -1px -1px 0 #000,  
-        1px -1px 0 #000,
-        -1px  1px 0 #000,
-        1px  1px 0 #000; /* Sombras para crear el marco */
-}
-
 /* Deficiones de la barra de navegación */
 .navbar {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: #437EB4;
     backdrop-filter: blur(10px);
 }
 
@@ -131,13 +123,34 @@ main {
     transition: width 0.3s, height 0.3s; /* Transición suave */
 }
 
+.navbar-brand p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+/* Sombras para crear el marco */
+.marco1 {
+    font-size: 48px;
+    /*text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px  2px 0 #000, 2px  2px 0 #000; */
+}
+
+
+.marco2 {
+    font-size: 20px;
+    /*text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px  1px 0 #000, 1px  1px 0 #000;*/
+}
+
+.navbar-collapse {
+    flex-grow: 0;
+}
+
 .custom-navbar .navbar-collapse {
     background-color: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
 }
 
 .navbar-toggler {
-    border: 1pt solid white;
+    border: 1pt solid marcoClaro;
 }
 
 .navbar-toggler .navbar-toggler-icon {
@@ -145,7 +158,7 @@ main {
 }
 
 .navbar-toggler:hover {
-    border: 1pt solid white;
+    border: 1pt solid var(--marcoClaro);
 }
 
 .navbar-toggler:focus {
@@ -216,12 +229,12 @@ main {
 
 /* Ajusta caracteristicas del boton "Enviar" del formulario */
 .btn {
-    color: white;
+    color: var(--letraClara);
     background-color: var(--colorPrincipal);
     border-radius:  5px;
     text-align: center;
     text-decoration: none;
-    border: 1px solid white;
+    border: 1px solid var(--marcoClaro);
 }
 
 .tooltip-inner {
@@ -279,23 +292,23 @@ main {
         height: 50px;
     }
 
+    .navbar-brand p {
+        margin-top: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+    }
+
     .marco1 {
-        font-size: 18px;
-        text-shadow: 
-            -2px -2px 0 #000,  
-            2px -2px 0 #000,
-            -2px  2px 0 #000,
-            2px  2px 0 #000; /* Sombras para crear el marco */
+        font-size: 24px;
+        /*text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px  2px 0 #000, 2px  2px 0 #000;*/
     }
     
     .marco2 {
         font-size: 14px;
-        text-shadow: 
-            -1px -1px 0 #000,  
-            1px -1px 0 #000,
-            -1px  1px 0 #000,
-            1px  1px 0 #000; /* Sombras para crear el marco */
+        /*text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px  1px 0 #000, 1px  1px 0 #000;*/
     }
+
     .contenedor-footer .row {
         flex-direction: row;
         align-items: center;
