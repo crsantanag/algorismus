@@ -193,8 +193,8 @@ main {
 /* Definiciones de las tarjetas (cards) */
 .card {
     background-color: var(--colorPrincipal);
-    display: flex;
-    flex-direction: column;
+    /*display: flex;
+    flex-direction: column;*/
     height: 100%;
     border: 2px solid var(--colorPrincipal);
 }
@@ -202,7 +202,7 @@ main {
 .card-body {
     flex-grow: 1;
 }
-
+/*
 .row.custom-margin {
     display: flex;
     flex-wrap: wrap;
@@ -211,7 +211,7 @@ main {
 .row.custom-margin > .col-12.col-md-4 {
     display: flex;
 }
-
+*/
 /* redondea los campos del formulario */
 #name {
     border-radius: 5px;
@@ -283,8 +283,31 @@ main {
     justify-content: center;
 }
 
+
+
+/* @media para tamaños grandes*/
+@media (min-width: 1366px) {
+
+    .custom-margin {
+        max-width: 100%;
+        margin-left: 150px;
+        margin-right: 150px;
+    }
+
+    .row {
+        --bs-cols: 4;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1000px) {
+    
+    .row {
+        --bs-cols: 3;
+    }
+}
+
 /* @media para tamaños xs y sm */
-@media (max-width: 768px) {
+@media (max-width: 767.97px) {
 
     .navbar-brand img {
         border-radius: 5px;
@@ -328,14 +351,5 @@ main {
 
     .contenedor-footer .d-flex {
         flex-direction: row;
-    }
-}
-
-/* @media para tamaños grandes*/
-@media (min-width: 1366px) {
-    .custom-margin {
-        max-width: 100%;
-        margin-left: 150px;
-        margin-right: 150px;
     }
 }

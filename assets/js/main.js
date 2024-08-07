@@ -1,4 +1,17 @@
 
+    //const pantallaAncho = document.getElementById('anchoPantalla');
+
+    //function actualizarAncho() {
+    //    pantallaAncho.textContent = `Ancho de la pantalla: ${window.innerWidth} píxeles`;
+    //}
+
+    // Llamamos a la función al cargar la página
+    //actualizarAncho();
+
+    // Agregamos un listener para el evento resize
+    //window.addEventListener('resize', actualizarAncho);
+
+
     // 1. JS con Bootstrap para los mensajes de alerta cuando se hace click 
     //    en "Enviar": Crea un <div> con el mensaje y la opción de cierre (X)
     //    Revisa que los campos del formulario de contacto no estén vacios
