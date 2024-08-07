@@ -196,6 +196,7 @@ main {
     display: flex;
     flex-direction: column;
     height: 100%;
+    border: 2px solid var(--colorPrincipal);
 }
 
 .card-body {
