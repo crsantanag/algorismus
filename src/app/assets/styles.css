@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    /*border: 1px solid red*/
+}
+
+.color_1 {
+    color: white;
+    background-color: rgba(82, 125, 176, 1);
+}
+
+.color_2 {
+    color: rgba(82, 125, 176, 1);
+    background-color: white;
+}
+
+.borde_2 {
+    border: solid  rgba(82, 125, 176, 1);
+}
+
+.navbar {
+    background-color: rgba(67, 126, 180, 0.5);
+    backdrop-filter: blur(10px);
+}
+
+.centrar {
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+}
+
+.centrar-contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
