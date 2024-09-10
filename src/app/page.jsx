@@ -11,6 +11,19 @@ export default function Home() {
     { src: '/carousel3.jpg', alt: 'Imagen 3' },
     { src: '/carousel4.jpg', alt: 'Imagen 4' }
   ];
+  
+  const textos1 = [
+    "Adaptación al mundo laboral actual y futuro",
+    "Contarás con las competencias más demandadas, las que en el futuro te abrirán las puertas a las mejores oportunidades",
+    "Integración de habilidades interdisciplinarias",
+    "Podrás aplicar tus habilidades de programación en áreas como ciencias, matemáticas, arte o música, fortaleciendo tu aprendizaje integral"
+  ]
+
+  const textos2 = [
+    "Alta demanda laboral: Las empresas en todas las industrias buscan personas con habilidades en programación para desarrollar aplicaciones, sistemas, automatizar procesos y manejar datos. La tecnología impulsa muchos sectores, lo que genera una creciente demanda de programadores.",
+    "Resolver problemas complejos: Aprender a programar desarrolla habilidades de resolución de problemas. Permite a las personas abordar desafíos de manera estructurada y lógica, descomponiendo problemas complejos en partes más manejables.",
+    "Alta demanda laboral: Las empresas en todas las industrias buscan personas con habilidades en programación para desarrollar aplicaciones, sistemas, automatizar procesos y manejar datos. La tecnología impulsa muchos sectores, lo que genera una creciente demanda de programadores."
+  ]
 
   useEffect(() => {
     const intervalId = setInterval(() => {
@@ -48,7 +61,7 @@ export default function Home() {
 
           <div className="w-full md:w-1/2 flex flex-col font-light text-xl pt-4 md:pt-0 mx-4 md:mx-10">
             <p className='text-left font-bold font-sans'>Arthur C. Clarke</p>
-              <p className='text-left font-ligth font-sans' >“Los microprocesadores se están metiendo en todo. En un futuro cercano no habrá ningún accesorio -salvo una escoba, acaso- que no tenga un procesador dentro.”</p>
+            <p className='text-left font-ligth font-sans' >“Los microprocesadores se están metiendo en todo. En un futuro cercano no habrá ningún accesorio -salvo una escoba, acaso- que no tenga un procesador dentro.”</p>
           </div>
 
         </div>
@@ -64,13 +77,18 @@ export default function Home() {
         </div>
 
         <div className="mx-0 md:mx-10">
-          <p className="font-sans font-bold text-2xl">En el año 2030, el 90% de los trabajos van a requerir conocimientos de programación </p>
+          <p className="text-center font-sans font-bold text-2xl">En el año 2030, el 90% de los trabajos van a requerir conocimientos de programación </p>
           <br/>
-          <p className="text-left font-sans font-bold"> Adaptación al mundo laboral actual y futuro </p>
-          <p className="text-left font-sans font-thin">Contarás con las competencias más demandadas, las que en el futuro te abrirán las puertas a las mejores oportunidades</p>
-          <br/>
-          <p className="text-left font-sans font-bold"> Integración de habilidades interdisciplinarias </p>
-          <p className="text-left font-sans font-thin">Podrás aplicar tus habilidades de programación en áreas como ciencias, matemáticas, arte o música, fortaleciendo tu aprendizaje integral</p>
+
+          <ul className="list-none">
+            {textos1.map((item, index) => (
+              <li key={index}>
+                <p className={ index == 0 || index == 2 ? "text-left font-sans font-bold" : "text-left font-sans font-thin"}> {item} </p>
+                {index === 1 || index === 3 ? <br /> : null}
+              </li>
+            ))}
+          </ul>
+
         </div>
 
         <div className="flex justify-end">
@@ -78,17 +96,17 @@ export default function Home() {
         </div>
 
         <div>
-          <p className="font-sans font-bold text-2xl text-center">Por qué estudiar programación </p>
+          <p className="font-sans font-bold text-2xl text-center">Por qué estudiar programación</p>
           <br/>
-          <p className="font-sans text-left font-thin">
-            <span className="font-sans font-semibold"> Alta demanda laboral:</span> Las empresas en todas las industrias buscan personas con habilidades en programación para desarrollar aplicaciones, sistemas, automatizar procesos y manejar datos. La tecnología impulsa muchos sectores, lo que genera una creciente demanda de programadores.
-            <br/><br/>
-            <span className="font-sans font-semibold"> Resolver problemas complejos:</span> Aprender a programar desarrolla habilidades de resolución de problemas. Permite a las personas abordar desafíos de manera estructurada y lógica, descomponiendo problemas complejos en partes más manejables.
-            <br/><br/><span className="font-sans font-semibold"></span>
-            <span className="font-sans font-semibold"> Alta demanda laboral:</span> Las empresas en todas las industrias buscan personas con habilidades en programación para desarrollar aplicaciones, sistemas, automatizar procesos y manejar datos. La tecnología impulsa muchos sectores, lo que genera una creciente demanda de programadores.
-            <br/><br/>
-            <span className="font-sans font-semibold"> Resolver problemas complejos:</span> Aprender a programar desarrolla habilidades de resolución de problemas. Permite a las personas abordar desafíos de manera estructurada y lógica, descomponiendo problemas complejos en partes más manejables.
-          </p>
+          <div className="font-sans text-left font-thin mx-0 md:mx-10">
+            <ul className="list-none">
+              {textos2.map((item, index) => (
+                <li key={index}>
+                  <p> {item} </p><br/>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
 
         <div className="flex justify-end">
@@ -99,7 +117,7 @@ export default function Home() {
         </div>
 
         <div>
-          <p className="font-sans text-left font-thin">
+          <p className="font-sans text-left font-thin mx-0 md:mx-10">
             <span className="font-sans font-semibold">Innovación y creación:</span> Con el conocimiento en lenguajes de programación, puedes crear productos innovadores como aplicaciones móviles, plataformas web, herramientas de automatización y más. Te da el poder de convertir ideas en soluciones tecnológicas.
             <br/><br/>
             <span className="font-sans font-semibold">Versatilidad y adaptabilidad:</span> Estudiar un lenguaje de programación proporciona una base que facilita aprender otros lenguajes. Los conceptos fundamentales de la programación, como algoritmos, estructuras de datos y lógica de control, son aplicables en muchos lenguajes.

@@ -1,5 +1,5 @@
 'use client'
-import { Image } from "@nextui-org/react";
+import { Link, Image }   from "@nextui-org/react"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
 import "../assets/styles.css";
@@ -87,6 +87,16 @@ const nosotros = () => {
 
                 </div>
             </div>
+
+            <div className="flex flex-col md:flex-row justify-center">
+                <Link   className="color_1 w-full md:w-96 h-10 text-center justify-center border-white border-2 rounded-xl"
+                        isExternal
+                        showAnchorIcon
+                        href="/cursos">
+                Revisa los cursos disponibles
+                </Link>
+            </div>
+
         </div>
     </>
     );
