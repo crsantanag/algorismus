@@ -34,7 +34,7 @@ const nosotros = () => {
 
                             Nuestro enfoque es práctico y dirigido a dotar a los jóvenes de las herramientas necesarias para enfrentar los desafíos tecnológicos de hoy y del mañana.<br/><br/>
                             
-                            En un mundo donde la presencia digital es fundamental, poseer habilidades en programación no es solo una ventaja competitiva, sino una necesidad. Como bien lo expresó Bill Gates: Si tu negocio no está en Internet, no existe.
+                            En un mundo donde la presencia digital es fundamental, poseer habilidades en programación no es solo una ventaja competitiva, sino una necesidad. Como bien lo expresó Bill Gates: <span className="font-bold"> Si tu negocio no está en Internet, no existe.</span>
                             </p>
                         </div>
                     </div>
@@ -51,11 +51,15 @@ const nosotros = () => {
                             <p className="font-light font-sans">
                             Es ingeniero en Computación e Informática de la Universidad de Concepción y también ingeniero Civil 
                             Industrial de la misma Universidad, además de contar con un Magíster en Administración de Empresas (MBA) 
-                            de la Universidad del Desarrollo.<br/><br/> Tiene más de 30 años de experiencia en la dirección y gestión estratégica 
+                            de la Universidad del Desarrollo.<br/><br/> 
+                            
+                            Tiene más de 30 años de experiencia en la dirección y gestión estratégica 
                             de pequeñas y medianas empresas. Ha actualizado y ampliado sus conocimientos en los últimos años, adquiriendo 
                             nuevas competencias en el área de Desarrollo Web Full Stack con tecnologías como JavaScript, Ruby 
-                            on Rails y Python. <br/><br/>Recientemente creo la escuela de programación <span className="font-bold">ALGORISMUS</span>, cuyo 
-                            objetivo es proporcionar a jóvenes las competencias y habilidades necesarias para comenzar a navegar en el
+                            on Rails y Python. <br/><br/>
+
+                            Recientemente crea la escuela de programación <span className="font-bold">ALGORISMUS</span>, cuyo 
+                            objetivo es proporcionar a jóvenes las <span className="font-bold">competencias</span> y habilidades necesarias para comenzar a navegar en el
                             fascinante mundo del desarrollo de aplicaciones web y móviles, así como también del análisis de datos.
                             </p>
                         </div>

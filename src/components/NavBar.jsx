@@ -79,7 +79,7 @@ export default function NavBar () {
                 </NavbarItem>
                 <NavbarItem>
                     <Link href="/contacto">
-                        <Button className="flex w-32 color_2 borde_2 font-bold">Contacto<FontAwesomeIcon className="w-8 h-8" icon={faEnvelope}/></Button>
+                        <Button className="flex w-32 color_2 run font-bold">Contacto<FontAwesomeIcon className="w-8 h-8" icon={faEnvelope}/></Button>
                     </Link>
                 </NavbarItem>
             </NavbarContent>
