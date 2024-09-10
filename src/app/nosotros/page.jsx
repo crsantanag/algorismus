@@ -30,14 +30,12 @@ const nosotros = () => {
                             <a className="color_1 flex items-center justify-center h-16 font-bold">Algorismus</a>
                         </div> <br/>
                         <div className="px-2 md:px-4 text-left">
-                            <p className="font-light font-sans"><span className="font-bold">ALGORISMUS LEARNING</span> nace como respuesta a la necesidad de desarrollar <span className="fst -italic"> <span className="font-bold">competencias </span> </span> en el área de la computación, con un
-                            enfoque en habilidades prácticas como la programación y la resolución de problemas.<br/><br/>
-                            
+                            <p className="font-light font-sans"><span className="font-bold">ALGORISMUS LEARNING</span> surge como respuesta a la creciente necesidad de formar a los jóvenes en habilidades esenciales en el mundo digital. Nos centramos en desarrollar <span className="font-bold"> competencias </span> clave en programación, resolución de problemas y pensamiento lógico, esenciales para un futuro donde la tecnología marca la diferencia.<br/><br/>
 
-                            <br/><br/>Nuestra organización se enfoca en ofrecer una enseñanza adaptada 
-                            a las demandas actuales, enfocándose en las <span className="fst-italic"><span className="font-bold">competencias
-                            </span></span> necesarias para prosperar en un mundo digital.
-                            <br/><br/> <q>Si un negocio no está en Internet, ese negocio no existe.</q> - Bill Gates</p>
+                            Nuestro enfoque es práctico y dirigido a dotar a los jóvenes de las herramientas necesarias para enfrentar los desafíos tecnológicos de hoy y del mañana.<br/><br/>
+                            
+                            En un mundo donde la presencia digital es fundamental, poseer habilidades en programación no es solo una ventaja competitiva, sino una necesidad. Como bien lo expresó Bill Gates: Si tu negocio no está en Internet, no existe.
+                            </p>
                         </div>
                     </div>
 

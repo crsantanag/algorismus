@@ -39,8 +39,8 @@ export default function NavBar () {
                     <NavbarMenuItem key={`${item}-${index}`} className="bg-black">
                         <Link 
                             className={index == menuItems.length - 1 ? 
-                                "w-40  bg-white text-black font-bold border-white justify-center items-center border-2 rounded-xl" :
-                                "w-40  bg-black text-white font-bold border-white justify-center items-center border-2 rounded-xl"}
+                                "w-40  color_1 font-bold border-white justify-center items-center border-2 rounded-xl" :
+                                "w-40  color_2 font-bold border-white justify-center items-center border-2 rounded-xl"}
                                 style={{ padding: '0px', margin: '0px' }}
                                 href={`${menuPages[index]}`} >
                                 {item}
@@ -53,15 +53,15 @@ export default function NavBar () {
             <Link href="/">
                 <Image src="/logo.jpg" height={80} alt="Logo"/>
             </Link>
+
+            <span className="font-thin text-2xl md:text-2xl lg:text-4xl xl:text-6xl mx-auto"> A l g o r i s m u s </span>
             
             <NavbarContent className="mx-0 px-0 md:hidden" justify="end"> 
                 <NavbarMenuToggle  aria-label={isMenuOpen ? "Close menu" : "Open menu"} className="text-white border-white rounded-full"/>
             </NavbarContent>
 
             <NavbarContent className="mx-0 px-0 hidden md:px-0 md:mx-0 md:flex font-extrabold" justify="end">
-                <NavbarItem className="font-thin md:text-2xl lg:text-4xl xl:text-6xl mx-auto">
-                A l g o r i s m u s
-                </NavbarItem>
+
                 <NavbarItem>
                     <Link href="/">
                         <Button className="w-16 color_1 border-white border-2">Inicio</Button>

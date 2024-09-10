@@ -10,13 +10,13 @@ export default function Footer () {
             A l g o r i s m u s
         </div>
         <div className="flex w-full md:w-1/3 justify-center items-center md:items-end h-10">
-            © 2024 - Powered by Next.js, NextUI, Tailwind
+            © 2024 - Powered by Next.js - NextUI - Tailwind
         </div>
-        <div className="flex w-full md:w-1/3 gap-4 justify-center md:justify-end items-end h-12">
-            <FontAwesomeIcon className="w-10 h-10 mr-2" icon={faSquareGithub} />
-            <FontAwesomeIcon className="w-10 h-10 mx-2" icon={faSquareFacebook} />
-            <FontAwesomeIcon className="w-10 h-10 mx-2" icon={faSquareInstagram} />
-            <FontAwesomeIcon className="w-10 h-10 ml-2" icon={faLinkedin} />
+        <div className="flex w-full md:w-1/3 justify-center md:justify-end items-end h-12">
+            <FontAwesomeIcon className="w-10 h-10 mr-1" icon={faSquareGithub} />
+            <FontAwesomeIcon className="w-10 h-10 mx-1" icon={faSquareFacebook} />
+            <FontAwesomeIcon className="w-10 h-10 mx-1" icon={faSquareInstagram} />
+            <FontAwesomeIcon className="w-10 h-10 ml-1" icon={faLinkedin} />
         </div>
     </div>
     <br />

@@ -38,7 +38,7 @@ const cursos = () => {
                             </CardBody>
                             <Divider/>
                             <CardFooter>
-                                <Link className="color_1 w-full text-center justify-center  border-white border-2 rounded-xl"
+                                <Link className="color_1 w-full h-10 text-center justify-center border-white border-2 rounded-xl"
                                     isExternal
                                     showAnchorIcon
                                     isBlock
@@ -69,7 +69,7 @@ const cursos = () => {
                             </CardBody>
                             <Divider/>
                             <CardFooter>
-                                <Link className="bg-black text-white items-center"
+                                <Link className="color_1 w-full h-10 text-center justify-center border-white border-2 rounded-xl"
                                     isExternal
                                     showAnchorIcon
                                     href="/pdf/02.JavascripReact.pdf"
@@ -101,7 +101,7 @@ const cursos = () => {
                             </CardBody>
                             <Divider/>
                             <CardFooter>
-                                <Link className="bg-black text-white items-center"
+                                <Link className="color_1 w-full h-10 text-center justify-center border-white border-2 rounded-xl"
                                     isExternal
                                     showAnchorIcon
                                     href="/pdf/03.baseDeDatos.pdf"
@@ -135,7 +135,7 @@ const cursos = () => {
                             </CardBody>
                             <Divider/>
                             <CardFooter>
-                                <Link className="bg-black text-white items-center"
+                                <Link className="color_1 w-full h-10 text-center justify-center border-white border-2 rounded-xl"
                                     isExternal
                                     showAnchorIcon
                                     href="/pdf/04.rubyOnRails.pdf"
@@ -167,7 +167,7 @@ const cursos = () => {
                             </CardBody>
                             <Divider/>
                             <CardFooter>
-                                <Link className="bg-black text-white items-center font-bold"
+                                <Link className="color_1 w-full h-10 text-center justify-center border-white border-2 rounded-xl"
                                     isExternal
                                     showAnchorIcon
                                     href="/pdf/05.pythonDjango.pdf"
