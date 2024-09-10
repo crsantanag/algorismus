@@ -22,7 +22,13 @@ export default function Home() {
   const textos2 = [
     "Alta demanda laboral: Las empresas en todas las industrias buscan personas con habilidades en programación para desarrollar aplicaciones, sistemas, automatizar procesos y manejar datos. La tecnología impulsa muchos sectores, lo que genera una creciente demanda de programadores.",
     "Resolver problemas complejos: Aprender a programar desarrolla habilidades de resolución de problemas. Permite a las personas abordar desafíos de manera estructurada y lógica, descomponiendo problemas complejos en partes más manejables.",
-    "Alta demanda laboral: Las empresas en todas las industrias buscan personas con habilidades en programación para desarrollar aplicaciones, sistemas, automatizar procesos y manejar datos. La tecnología impulsa muchos sectores, lo que genera una creciente demanda de programadores."
+    "Innovación y creación de productos: Con el conocimiento en lenguajes de programación, puedes crear productos innovadores como aplicaciones móviles, plataformas web, herramientas de automatización y más. Te da el poder de convertir ideas en soluciones tecnológicas"
+  ]
+
+  const textos3 = [
+    "Versatilidad y adaptabilidad: Estudiar un lenguaje de programación proporciona una base que facilita aprender otros lenguajes. Los conceptos fundamentales de la programación, como algoritmos, estructuras de datos y lógica de control, son aplicables en muchos lenguajes.",
+    "Mejora de la productividad: La programación permite automatizar tareas repetitivas o complejas, lo que ahorra tiempo y mejora la eficiencia en muchas áreas. Desde scripts simples hasta procesos industriales, la automatización es un beneficio clave.",
+    "Comprensión del mundo digital: Vivimos en una era digital, y comprender cómo funcionan las aplicaciones y el software a nivel fundamental te permite navegar mejor en el mundo moderno y participar de manera activa en su evolución."
   ]
 
   useEffect(() => {
@@ -98,11 +104,17 @@ export default function Home() {
         <div>
           <p className="font-sans font-bold text-2xl text-center">Por qué estudiar programación</p>
           <br/>
-          <div className="font-sans text-left font-thin mx-0 md:mx-10">
-            <ul className="list-none">
+
+          <div className="text-justify mb-4 font-sans font-thin mx-0 md:mx-10">
+            <ul className="list-none pl-2">
               {textos2.map((item, index) => (
                 <li key={index}>
-                  <p> {item} </p><br/>
+                  <div className="flex flex-row">
+                    <div className="before:content-['-'] before:mr-1"></div>
+                    <div className="mr-3">
+                      {item} {<br/>} {<br/>}
+                    </div>
+                  </div>
                 </li>
               ))}
             </ul>
@@ -117,15 +129,20 @@ export default function Home() {
         </div>
 
         <div>
-          <p className="font-sans text-left font-thin mx-0 md:mx-10">
-            <span className="font-sans font-semibold">Innovación y creación:</span> Con el conocimiento en lenguajes de programación, puedes crear productos innovadores como aplicaciones móviles, plataformas web, herramientas de automatización y más. Te da el poder de convertir ideas en soluciones tecnológicas.
-            <br/><br/>
-            <span className="font-sans font-semibold">Versatilidad y adaptabilidad:</span> Estudiar un lenguaje de programación proporciona una base que facilita aprender otros lenguajes. Los conceptos fundamentales de la programación, como algoritmos, estructuras de datos y lógica de control, son aplicables en muchos lenguajes.
-            <br/><br/>
-            <span className="font-sans font-semibold">Mejora de la productividad:</span> La programación permite automatizar tareas repetitivas o complejas, lo que ahorra tiempo y mejora la eficiencia en muchas áreas. Desde scripts simples hasta procesos industriales, la automatización es un beneficio clave.
-            <br/><br/>
-            <span className="font-sans font-semibold">Comprensión del mundo digital:</span> Vivimos en una era digital, y comprender cómo funcionan las aplicaciones y el software a nivel fundamental te permite navegar mejor en el mundo moderno y participar de manera activa en su evolución.
-          </p>
+        <div className="text-justify mb-4 font-sans font-thin mx-0 md:mx-10">
+            <ul className="list-none pl-2">
+              {textos3.map((item, index) => (
+                <li key={index}>
+                  <div className="flex flex-row">
+                    <div className="before:content-['-'] before:mr-1"></div>
+                    <div className="mr-3">
+                      {item} {<br/>} {<br/>}
+                    </div>
+                  </div>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
         
       </div>
