@@ -7,14 +7,23 @@ import "../assets/styles.css";
 const nosotros = () => {
 
     const items1 = [
+        "ALGORISMUS LEARNING surge como respuesta a la creciente necesidad de formar a los jóvenes en habilidades esenciales para el mundo digital. Nos centramos en desarrollar competencias claves en programación, resolución de problemas y pensamiento lógico, esenciales para un futuro donde la tecnología marca la diferencia.",
+        "Nuestro enfoque es práctico, priorizando dirigido a dotar a los jóvenes de las herramientas necesarias para enfrentar los desafíos tecnológicos de hoy y del mañana.",
+        "En un mundo donde la presencia digital es fundamental, poseer habilidades en programación no es solo una ventaja competitiva, sino una necesidad, como bien lo expresó Bill Gates: Si tu negocio no está en Internet, no existe."
     ];
     const items2 = [
+    "Es ingeniero en Computación e Informática de la Universidad de Concepción y también ingeniero Civil Industrial de la misma Universidad, además de contar con un Magíster en Administración de Empresas (MBA) de la Universidad del Desarrollo", 
+    "Tiene más de 30 años de experiencia en la dirección y gestión estratégica de pequeñas y medianas empresas. Ha actualizado y ampliado sus conocimientos en los últimos años, adquiriendo nuevas competencias en el área de Desarrollo Web Full Stack con tecnologías como JavaScript, Ruby  on Rails y Python.",
+    "Recientemente crea la escuela de programación ALGORISMUS, cuyo objetivo es proporcionar a jóvenes las competencias y habilidades necesarias para comenzar a navegar en el fascinante mundo del desarrollo de aplicaciones web y móviles, así como también del análisis de datos."
     ];
+
     const items3 = [
-    ];
-    const items4 = [
-    ];
-    const items5 = [
+    "Asesor Educacional 1",
+    "[ agregar presentación ]",
+    "Asesor Educacional 2",
+    "[ agregar presentación ]",
+    "Asesor Educacional 3",
+    "[ agregar presentación ]"
     ];
 
     return (
@@ -29,15 +38,22 @@ const nosotros = () => {
                         <div className="text-center">
                             <a className="color_1 flex items-center justify-center h-16 font-bold">Algorismus</a>
                         </div> <br/>
-                        <div className="px-2 md:px-4 text-left">
-                            <p className="font-light font-sans"><span className="font-bold">ALGORISMUS LEARNING</span> surge como respuesta a la creciente necesidad de formar a los jóvenes en habilidades esenciales en el mundo digital. Nos centramos en desarrollar <span className="font-bold"> competencias </span> clave en programación, resolución de problemas y pensamiento lógico, esenciales para un futuro donde la tecnología marca la diferencia.<br/><br/>
-
-                            Nuestro enfoque es práctico y dirigido a dotar a los jóvenes de las herramientas necesarias para enfrentar los desafíos tecnológicos de hoy y del mañana.<br/><br/>
-                            
-                            En un mundo donde la presencia digital es fundamental, poseer habilidades en programación no es solo una ventaja competitiva, sino una necesidad. Como bien lo expresó Bill Gates: <span className="font-bold"> Si tu negocio no está en Internet, no existe.</span>
-                            </p>
+                        <div className="px-2 md:px-4 text-left font-light font-sans">
+                            <ul className="list-none pl-2">
+                                {items1.map((item, index) => (
+                                    <li key={index}>
+                                        <div className="flex flex-row">
+                                            <div className="before:content-[' '] before:mr-1"></div>
+                                            <div className="mr-3">
+                                                {item} {<br/>} {<br/>}
+                                            </div>
+                                        </div>
+                                    </li>
+                                ))}
+                            </ul>
                         </div>
                     </div>
+                    
 
                     <div className="w-full flex flex-col px-2 md:px-4 pb-5" >
                         <div className="text-center">
@@ -47,21 +63,19 @@ const nosotros = () => {
                                 </a>
                             </span>
                         </div> <br/>
-                        <div className="px-2 md:px-4 text-left">
-                            <p className="font-light font-sans">
-                            Es ingeniero en Computación e Informática de la Universidad de Concepción y también ingeniero Civil 
-                            Industrial de la misma Universidad, además de contar con un Magíster en Administración de Empresas (MBA) 
-                            de la Universidad del Desarrollo.<br/><br/> 
-                            
-                            Tiene más de 30 años de experiencia en la dirección y gestión estratégica 
-                            de pequeñas y medianas empresas. Ha actualizado y ampliado sus conocimientos en los últimos años, adquiriendo 
-                            nuevas competencias en el área de Desarrollo Web Full Stack con tecnologías como JavaScript, Ruby 
-                            on Rails y Python. <br/><br/>
-
-                            Recientemente crea la escuela de programación <span className="font-bold">ALGORISMUS</span>, cuyo 
-                            objetivo es proporcionar a jóvenes las <span className="font-bold">competencias</span> y habilidades necesarias para comenzar a navegar en el
-                            fascinante mundo del desarrollo de aplicaciones web y móviles, así como también del análisis de datos.
-                            </p>
+                        <div className="px-2 md:px-4 text-left font-light font-sans">
+                            <ul className="list-none pl-2">
+                                {items2.map((item, index) => (
+                                    <li key={index}>
+                                        <div className="flex flex-row">
+                                            <div className="before:content-[' '] before:mr-1"></div>
+                                            <div className="mr-3">
+                                                {item} {<br/>} {<br/>}
+                                            </div>
+                                        </div>
+                                    </li>
+                                ))}
+                            </ul>
                         </div>
                     </div>
 
@@ -73,15 +87,20 @@ const nosotros = () => {
                                 </a>
                             </span>
                         </div> <br/>
-                        <div className="px-2 md:px-4 text-left">
-                            <p className="font-light font-sans">
-                            Asesor Educacional 1<br/>
-                            [ agregar presentación ]<br/><br/>
-                            Asesor Educacional 2<br/>
-                            [ agregar presentación ]<br/><br/>
-                            Asesor Educacional 3<br/>
-                            [ agregar presentación ]<br/>
-                            </p>
+                        <div className="px-2 md:px-4 text-left font-light font-sans">
+                            <ul className="list-none pl-2">
+                                {items3.map((item, index) => (
+                                    <li key={index}>
+                                        <div className="flex flex-row">
+                                            <div className="before:content-[' '] before:mr-1"></div>
+                                            <div className="mr-3">
+                                                {item} {<br/>}
+                                                {index === 1 || index === 3 || index == 5? <br /> : null}
+                                            </div>
+                                        </div>
+                                    </li>
+                                ))}
+                            </ul>
                         </div>
                     </div>
 

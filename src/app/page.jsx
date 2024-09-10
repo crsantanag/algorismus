@@ -76,10 +76,7 @@ export default function Home() {
       <div className="my-0 mx-4 md:mx-10 py-10 px-0 bg-black text-white grid grid-cols-1 md:grid-cols-2 gap-4"> 
 
         <div className="flex justify-end">
-          <Image  className="border-white border-2"
-                  alt="2126693798"
-                  radius="sm"
-                  src="/message1.jpg"/>
+          <Image  className="border-white border-2" alt="2126693798" radius="sm" src="/message1.jpg"/>
         </div>
 
         <div className="mx-0 md:mx-10">
@@ -122,10 +119,7 @@ export default function Home() {
         </div>
 
         <div className="flex justify-end">
-          <Image  className="border-white border-2"
-                  alt="2126693798"
-                  radius="sm"
-                  src="/message3.jpg"/>
+          <Image  className="border-white border-2" alt="2126693798" radius="sm" src="/message3.jpg"/>
         </div>
 
         <div>
