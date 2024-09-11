@@ -9,7 +9,7 @@ export default function Footer () {
         <div className="flex w-full md:w-1/3 justify-center md:justify-start items-center md:items-end h-10">
             A l g o r i s m u s
         </div>
-        <div className="flex w-full md:w-1/3 justify-center items-center md:items-end h-10">
+        <div className="flex w-full md:w-1/3 justify-center items-center text-base md:items-end h-10">
             © 2024 - Powered by Next.js - NextUI - Tailwind
         </div>
         <div className="flex w-full md:w-1/3 justify-center md:justify-end items-end h-12">

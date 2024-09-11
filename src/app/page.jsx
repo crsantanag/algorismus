@@ -5,6 +5,7 @@ import '../app/assets/styles.css'
 
 export default function Home() {
   const [activeIndex, setActiveIndex] = useState(0);
+ 
   const images = [
     { src: '/carousel1.jpg', alt: 'Imagen 1' },
     { src: '/carousel2.jpg', alt: 'Imagen 2' },
@@ -20,21 +21,21 @@ export default function Home() {
   ]
 
   const textos2 = [
-    "Alta demanda laboral: Las empresas en todas las industrias buscan personas con habilidades en programación para desarrollar aplicaciones, sistemas, automatizar procesos y manejar datos. La tecnología impulsa muchos sectores, lo que genera una creciente demanda de programadores.",
+    "Innovación y creación: Con el conocimiento de lenguajes de programación, puedes crear productos innovadores como aplicaciones móviles, plataformas web, herramientas de automatización y más. Te da el poder de convertir ideas en soluciones tecnológicas",
     "Resolver problemas complejos: Aprender a programar desarrolla habilidades de resolución de problemas. Permite a las personas abordar desafíos de manera estructurada y lógica, descomponiendo problemas complejos en partes más manejables.",
-    "Innovación y creación de productos: Con el conocimiento en lenguajes de programación, puedes crear productos innovadores como aplicaciones móviles, plataformas web, herramientas de automatización y más. Te da el poder de convertir ideas en soluciones tecnológicas"
+    "Comprensión del mundo digital: Vivimos en una era digital, y comprender cómo funcionan las aplicaciones y el software a nivel fundamental te permite navegar mejor en el mundo moderno y participar de manera activa en su evolución."
   ]
 
   const textos3 = [
+    "Alta demanda laboral: Las empresas en todas las industrias buscan personas con habilidades en programación para desarrollar aplicaciones, sistemas, automatizar procesos y manejar datos. La tecnología impulsa muchos sectores, lo que genera una creciente demanda de programadores.",
     "Versatilidad y adaptabilidad: Estudiar un lenguaje de programación proporciona una base que facilita aprender otros lenguajes. Los conceptos fundamentales de la programación, como algoritmos, estructuras de datos y lógica de control, son aplicables en muchos lenguajes.",
-    "Mejora de la productividad: La programación permite automatizar tareas repetitivas o complejas, lo que ahorra tiempo y mejora la eficiencia en muchas áreas. Desde scripts simples hasta procesos industriales, la automatización es un beneficio clave.",
-    "Comprensión del mundo digital: Vivimos en una era digital, y comprender cómo funcionan las aplicaciones y el software a nivel fundamental te permite navegar mejor en el mundo moderno y participar de manera activa en su evolución."
+    "Mejora de la productividad: La programación permite automatizar tareas repetitivas o complejas, lo que ahorra tiempo y mejora la eficiencia en muchas áreas. Desde scripts simples hasta procesos industriales, la automatización es un beneficio clave."
   ]
 
   useEffect(() => {
     const intervalId = setInterval(() => {
       setActiveIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 3000);
+      }, 3000);
 
     return () => clearInterval(intervalId);
   }, [images.length]);
@@ -50,7 +51,7 @@ export default function Home() {
             key={index}
             src={image.src}
             alt={image.alt}
-            className="w-full" 
+            className="w-full object-cover" 
             style={{ display: index === activeIndex ? 'block' : 'none' }}
           />
         ))}
@@ -75,8 +76,8 @@ export default function Home() {
 
       <div className="my-0 mx-4 md:mx-10 py-10 px-0 bg-black text-white grid grid-cols-1 md:grid-cols-2 gap-4"> 
 
-        <div className="flex justify-end">
-          <Image  className="border-white border-2" alt="2126693798" radius="sm" src="/message1.jpg"/>
+        <div className="flex justify-center sm:justify-end my-auto">
+          <Image  className="border-white border-2" width={250} alt="2126693798" radius="sm" src="/message1.jpg"/>
         </div>
 
         <div className="mx-0 md:mx-10">
@@ -94,20 +95,20 @@ export default function Home() {
 
         </div>
 
-        <div className="flex justify-end">
-          <Image  className="border-white border-2" alt="2126693798" radius="sm" src="/message2.jpg"/>
+        <div className="flex justify-center sm:justify-end my-auto">
+          <Image  className="border-white border-2" width={250} alt="2126693798" radius="sm" src="/message2.jpg"/>
         </div>
 
         <div>
           <p className="font-sans font-bold text-2xl text-center">Por qué estudiar programación</p>
           <br/>
 
-          <div className="text-justify mb-4 font-sans font-thin mx-0 md:mx-10">
+          <div className="mb-4 font-sans font-thin mx-0 md:mx-10">
             <ul className="list-none pl-2">
               {textos2.map((item, index) => (
                 <li key={index}>
                   <div className="flex flex-row">
-                    <div className="before:content-['-'] before:mr-1"></div>
+                    <div className="before:content-[''] before:mr-1"></div>
                     <div className="mr-3">
                       {item} {<br/>} {<br/>}
                     </div>
@@ -118,17 +119,17 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="flex justify-end">
-          <Image  className="border-white border-2" alt="2126693798" radius="sm" src="/message3.jpg"/>
+        <div className="flex justify-center sm:justify-end my-auto">
+          <Image  className="border-white border-2" width={250} alt="2126693798" radius="sm" src="/message3.jpg"/>
         </div>
 
         <div>
-        <div className="text-justify mb-4 font-sans font-thin mx-0 md:mx-10">
+        <div className="mb-4 font-sans font-thin mx-0 md:mx-10">
             <ul className="list-none pl-2">
               {textos3.map((item, index) => (
                 <li key={index}>
                   <div className="flex flex-row">
-                    <div className="before:content-['-'] before:mr-1"></div>
+                    <div className="before:content-[''] before:mr-1"></div>
                     <div className="mr-3">
                       {item} {<br/>} {<br/>}
                     </div>

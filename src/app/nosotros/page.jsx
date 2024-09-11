@@ -7,10 +7,11 @@ import "../assets/styles.css";
 const nosotros = () => {
 
     const items1 = [
-        "ALGORISMUS LEARNING surge como respuesta a la creciente necesidad de formar a los jóvenes en habilidades esenciales para el mundo digital. Nos centramos en desarrollar competencias claves en programación, resolución de problemas y pensamiento lógico, esenciales para un futuro donde la tecnología marca la diferencia.",
-        "Nuestro enfoque es práctico, priorizando dirigido a dotar a los jóvenes de las herramientas necesarias para enfrentar los desafíos tecnológicos de hoy y del mañana.",
-        "En un mundo donde la presencia digital es fundamental, poseer habilidades en programación no es solo una ventaja competitiva, sino una necesidad, como bien lo expresó Bill Gates: Si tu negocio no está en Internet, no existe."
+    "ALGORISMUS LEARNING surge como respuesta a la creciente necesidad de formar a los jóvenes en habilidades esenciales para el mundo digital. Nos centramos en desarrollar competencias claves en programación, resolución de problemas y pensamiento lógico, esenciales para un futuro donde la tecnología marca la diferencia.",
+    "Nuestro enfoque es práctico, dirigido a dotar a los jóvenes de las herramientas necesarias para enfrentar los desafíos tecnológicos de hoy y del mañana.",
+    "En un mundo donde la presencia digital es fundamental, poseer habilidades en programación no es solo una ventaja competitiva, sino una necesidad, como bien lo expresó Bill Gates: Si tu negocio no está en Internet, no existe."
     ];
+
     const items2 = [
     "Es ingeniero en Computación e Informática de la Universidad de Concepción y también ingeniero Civil Industrial de la misma Universidad, además de contar con un Magíster en Administración de Empresas (MBA) de la Universidad del Desarrollo", 
     "Tiene más de 30 años de experiencia en la dirección y gestión estratégica de pequeñas y medianas empresas. Ha actualizado y ampliado sus conocimientos en los últimos años, adquiriendo nuevas competencias en el área de Desarrollo Web Full Stack con tecnologías como JavaScript, Ruby  on Rails y Python.",
@@ -55,7 +56,7 @@ const nosotros = () => {
                     </div>
                     
 
-                    <div className="w-full flex flex-col px-2 md:px-4 pb-5" >
+                    <div className="w-full flex flex-col px-2 md:px-4 pb-5">
                         <div className="text-center">
                             <span className="color_1 flex items-center justify-center h-16 font-bold">
                                 <a className="flex h-8 items-center justify-center" href="https://csantana.vercel.app/"> 
