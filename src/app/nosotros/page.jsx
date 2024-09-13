@@ -107,7 +107,7 @@ const nosotros = () => {
 
                 </div>
             </div>
-
+{/*
             <div className="flex flex-col md:flex-row justify-center">
                 <Link   className="color_1 w-full md:w-96 h-10 text-center justify-center border-white border-2 rounded-xl"
                         isExternal
@@ -116,7 +116,7 @@ const nosotros = () => {
                 Revisa los cursos disponibles
                 </Link>
             </div>
-
+*/}
         </div>
     </>
     );

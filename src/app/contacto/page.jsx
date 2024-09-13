@@ -55,7 +55,7 @@ export default function Contacto () {
     return (
         <div className="flex flex-col items-center m-0 pt-[96px]">
             <form onSubmit={handleSubmit} className=" w-full md:w-2/5 py-5">
-                <div className="flex flex-col justify-center text-center mx-2 md:mx-0">
+                <div className="flex flex-col justify-center text-center mx-8 md:mx-0">
                     <div className="font-bold text-3xl text-center my-10">
                         C o n t a c t o
                     </div>
@@ -94,7 +94,7 @@ export default function Contacto () {
                     <br/>
                 </div>
                 <button type="submit" 
-                        className="py-2 px-[10px] mx-2 md:mx-0 color_1 font-bold rounded-lg tracking-wider text-star border border-white">
+                        className="py-2 px-[10px] mx-8 md:mx-0 color_1 font-bold rounded-lg tracking-wider text-star border border-white">
                     Enviar mensaje
                 </button>
                 <br/>
