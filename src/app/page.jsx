@@ -35,12 +35,12 @@ export default function Home() {
   ]
 
     const defaultContent = [
-      "Algorismus es una escuela de programación que imparte clases en forma presencial u online, cuyo objetivo es enseñar y entregar competencias en el área de la computación, permitiendo a los jóvenes pasar de ser usuarios a ser CREADORES de aplicaciones.",
-      "Está orientado a jóvenes entre los 15 y 20 años (estar cursando entre 1ero y 4to de enseñanza media), de manera de entregarles las competencias necesarias para comenzar a desarrollar aplicaciones web y móviles",
-      "Las clases son presenciales u online, donde el alumno participa activamente en cada una de ellas, interactuando con el profesor, con sus compañeros, realizando trabajos en forma práctica y con apoyo permanente. LAS CLASES NO SON VIDEOS GRABADOS.",
-      "Nuestro cursos comprenden los lenguajes con mayor demanda en la actualidad: JavaScrip, Phyton y Ruby; junto con las bases de datos relacionales (sql) y no relacioanles. Revisa en detalle el programa y las competencia generales que se adquieren en cada curso en la opcion Cursos de la barra de navegación.",
-      "Los alumnos adquieren una serie de competencias, las que les permitiran comenzar a incursionar en mundo de las aplicaciones. Es un primer paso para conocer y decidir si, posteriormente, al terminar tus estudios de enseñanza media desean dedicarse profesionalmente a esta área y profundizar con estudios superiores, o bien, simplemente usar los conocimentos adquiridos para tener una ventaja competitiva en este mundo digital. El detalle de las oportunidades laborales se encuentran en la descripción de cada curso.",
-      "El detalle de cada curso se puede ver en la opción Cursos de la barra de navegación."
+      'Algorismus es una escuela de programación que imparte clases en forma presencial u online, cuyo objetivo es enseñar y entregar competencias en el área de la computación, permitiendo a los jóvenes pasar de ser usuarios a ser CREADORES de aplicaciones.',
+      'Está orientado a jóvenes entre los 15 y 20 años (estar cursando entre 1ero y 4to de enseñanza media), de manera de entregarles las competencias necesarias para comenzar a desarrollar aplicaciones web y móviles',
+      'Las clases son presenciales u online, donde el alumno participa activamente en cada una de ellas, interactuando con el profesor, con sus compañeros, realizando trabajos en forma práctica y con apoyo permanente. LAS CLASES NO SON VIDEOS GRABADOS.',
+      'Nuestros cursos comprenden los lenguajes con mayor demanda en la actualidad: JavaScript, Phyton y Ruby; junto con las bases de datos relacionales (sql) y no relacioanles. Revisa en detalle el programa y las competencias generales que se adquieren en cada curso en la opción "Cursos" de la barra de navegación/menú.',
+      'Los alumnos adquieren una serie de competencias, las que les permitirán comenzar a incursionar en el mundo de las aplicaciones. Es un primer paso para conocer y decidir si, posteriormente al terminar tus estudios de enseñanza media, desean dedicarse profesionalmente a esta área y profundizar con estudios superiores, o bien, simplemente usar los conocimentos adquiridos para tener una ventaja competitiva en este mundo digital. El detalle de las aplicaciones prácticas y oportunidades laborales se encuentran en la descripción de cada curso.',
+      'El detalle de cada curso se puede ver en la opción "Cursos" de la barra de navegación/menú.'
     ]
 
 
@@ -63,8 +63,7 @@ export default function Home() {
             key={index}
             src={image.src}
             alt={image.alt}
-            className="w-full object-cover" 
-            style={{ display: index === activeIndex ? 'block' : 'none' }}
+            className="w-full object-cover duration-500  ease-in-out" style={{ display: index === activeIndex ? 'block' : 'none' }}
           />
         ))}
         </div>
@@ -103,7 +102,7 @@ export default function Home() {
             <AccordionItem className='text-left bg-slate-600 text-white' key="5" aria-label="Accordion 5" title="¿Qué aplicación práctica tendrán los conocimientos que adquieren?">
             <p className='font-thin font-sans'> {defaultContent[4]} </p>
             </AccordionItem>
-            <AccordionItem className='text-left bg-slate-600 text-white' key="6" aria-label="Accordion 6" title="¿Dónde encuentro información de los cursos que dictan">
+            <AccordionItem className='text-left bg-slate-600 text-white' key="6" aria-label="Accordion 6" title="¿Dónde encuentro información de los cursos que dictan?">
                <p className='font-thin font-sans'> {defaultContent[5]} </p>
             </AccordionItem>
           </Accordion>
@@ -113,7 +112,7 @@ export default function Home() {
 
       <div className="my-0 mx-4 md:mx-10 py-10 px-0 bg-black text-white grid grid-cols-1 md:grid-cols-2 gap-4"> 
 
-        <div className="flex justify-center sm:justify-end my-auto">
+        <div className="flex align-top justify-center sm:justify-end">
           <Image  className="border-white border-2" width={250} alt="2126693798" radius="sm" src="/message1.jpg"/>
         </div>
 
@@ -132,7 +131,7 @@ export default function Home() {
 
         </div>
 
-        <div className="flex justify-center sm:justify-end my-auto">
+        <div className="flex align-top justify-center sm:justify-end">
           <Image  className="border-white border-2" width={250} alt="2126693798" radius="sm" src="/message2.jpg"/>
         </div>
 
@@ -156,7 +155,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="flex justify-center sm:justify-end my-auto">
+        <div className="flex align-top justify-center sm:justify-end">
           <Image  className="border-white border-2" width={250} alt="2126693798" radius="sm" src="/message3.jpg"/>
         </div>
 
