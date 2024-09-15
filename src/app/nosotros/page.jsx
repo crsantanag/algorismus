@@ -54,7 +54,7 @@ const nosotros = () => {
                             </ul>
                         </div>
                     </div>
-                    
+
 
                     <div className="w-full flex flex-col px-2 md:px-4 pb-5">
                         <div className="text-center">

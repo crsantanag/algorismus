@@ -63,7 +63,7 @@ export default function Contacto () {
                     <h3 className="font-light font-sans">¿ALGUNA PREGUNTA O COMENTARIO?</h3>
                     <p className="font-light font-sans">
                         No dudes en contactarnos, <br/>
-                        te responderé a la brevedad.</p>
+                        te responderemos a la brevedad.</p>
                     <br/><br/>
                     <hr/>
                     <br/>

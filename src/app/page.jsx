@@ -16,22 +16,20 @@ export default function Home() {
   ];
   
   const textos1 = [
-    "Adaptación al mundo laboral actual y futuro",
-    "Contarás con las competencias más demandadas, las que en el futuro te abrirán las puertas a las mejores oportunidades",
-    "Integración de habilidades interdisciplinarias",
-    "Podrás aplicar tus habilidades de programación en áreas como ciencias, matemáticas, arte o música, fortaleciendo tu aprendizaje integral"
+    { titulo: "Adaptación al mundo laboral actual y futuro", texto: "Contarás con las competencias más demandadas, las que en el futuro te abrirán las puertas a las mejores oportunidades"},
+    { titulo: "Integración de habilidades interdisciplinarias", texto: "Podrás aplicar tus habilidades de programación en áreas como ciencias, matemáticas, arte o música, fortaleciendo tu aprendizaje integral"}
   ]
 
   const textos2 = [
-    "Innovación y creación: Con el conocimiento de lenguajes de programación, puedes crear productos innovadores como aplicaciones móviles, plataformas web, herramientas de automatización y más. Te da el poder de convertir ideas en soluciones tecnológicas",
-    "Resolver problemas complejos: Aprender a programar desarrolla habilidades de resolución de problemas. Permite a las personas abordar desafíos de manera estructurada y lógica, descomponiendo problemas complejos en partes más manejables.",
-    "Comprensión del mundo digital: Vivimos en una era digital, y comprender cómo funcionan las aplicaciones y el software a nivel fundamental te permite navegar mejor en el mundo moderno y participar de manera activa en su evolución."
+    { titulo: "Innovación y creación:", texto: "Con el conocimiento de lenguajes de programación puedes crear productos innovadores como aplicaciones móviles, plataformas web, herramientas de automatización y más. Te da el poder de convertir ideas en soluciones tecnológicas" },
+    { titulo: "Resolver problemas complejos:", texto: "Aprender a programar desarrolla habilidades de resolución de problemas. Permite a las personas abordar desafíos de manera estructurada y lógica, descomponiendo problemas complejos en partes más manejables." },
+    { titulo: "Comprensión del mundo digital:", texto: "Vivimos en una era digital, por lo tanto, comprender cómo funcionan las aplicaciones y el software a nivel fundamental te permite navegar mejor en el mundo moderno y participar de manera activa en su evolución." }
   ]
 
   const textos3 = [
-    "Alta demanda laboral: Las empresas en todas las industrias buscan personas con habilidades en programación para desarrollar aplicaciones, sistemas, automatizar procesos y manejar datos. La tecnología impulsa muchos sectores, lo que genera una creciente demanda de programadores.",
-    "Versatilidad y adaptabilidad: Estudiar un lenguaje de programación proporciona una base que facilita aprender otros lenguajes. Los conceptos fundamentales de la programación, como algoritmos, estructuras de datos y lógica de control, son aplicables en muchos lenguajes.",
-    "Mejora de la productividad: La programación permite automatizar tareas repetitivas o complejas, lo que ahorra tiempo y mejora la eficiencia en muchas áreas. Desde scripts simples hasta procesos industriales, la automatización es un beneficio clave."
+    { titulo: "Alta demanda laboral: ", texto: "Las empresas buscan personas con habilidades en programación para desarrollar aplicaciones, sistemas, automatizar procesos y manejar datos. La tecnología impulsa muchos sectores, lo que genera una creciente demanda de programadores." },
+    { titulo: "Versatilidad y adaptabilidad: ", texto: "Estudiar un lenguaje de programación proporciona una base que facilita aprender otros lenguajes. Los conceptos fundamentales de la programación, como algoritmos, estructuras de datos y lógica de control, son aplicables en todos los lenguajes." },
+    { titulo: "Mejora de la productividad: ", texto: "La programación permite automatizar tareas repetitivas o complejas, lo que ahorra tiempo y mejora la eficiencia en muchas áreas. Desde scripts simples hasta procesos industriales, la automatización es un beneficio clave." }
   ]
 
     const defaultContent = [
@@ -52,8 +50,9 @@ export default function Home() {
     return () => clearInterval(intervalId);
   }, [images.length]);
 
-  return (
 
+  return (
+ 
     <div className="pt-[96px]">
 
       <div className="pt-8 pb-4 md:pb-10 px-0 mx-4 md:mx-10">
@@ -63,7 +62,7 @@ export default function Home() {
             key={index}
             src={image.src}
             alt={image.alt}
-            className="w-full object-cover duration-500  ease-in-out" style={{ display: index === activeIndex ? 'block' : 'none' }}
+            className={index === activeIndex ? "w-full block" : "hidden"}
           />
         ))}
         </div>
@@ -103,7 +102,7 @@ export default function Home() {
             <p className='font-thin font-sans'> {defaultContent[4]} </p>
             </AccordionItem>
             <AccordionItem className='text-left bg-slate-600 text-white' key="6" aria-label="Accordion 6" title="¿Dónde encuentro información de los cursos que dictan?">
-               <p className='font-thin font-sans'> {defaultContent[5]} </p>
+            <p className='font-thin font-sans'> {defaultContent[5]} </p>
             </AccordionItem>
           </Accordion>
         </div>
@@ -111,6 +110,7 @@ export default function Home() {
 
 
       <div className="my-0 mx-4 md:mx-10 py-10 px-0 bg-black text-white grid grid-cols-1 md:grid-cols-2 gap-4"> 
+
 
         <div className="flex align-top justify-center sm:justify-end">
           <Image  className="border-white border-2" width={250} alt="2126693798" radius="sm" src="/message1.jpg"/>
@@ -123,37 +123,40 @@ export default function Home() {
           <ul className="list-none">
             {textos1.map((item, index) => (
               <li key={index}>
-                <p className={ index == 0 || index == 2 ? "text-left font-sans font-bold" : "text-left font-sans font-thin"}> {item} </p>
-                {index === 1 || index === 3 ? <br /> : null}
+                <p className='text-left font-sans font-bold'> {item.titulo} </p> 
+                <p className='text-left font-sans font-thin'> {item.texto} </p> <br/>
               </li>
             ))}
           </ul>
-
         </div>
+
+
+        <div>
+        </div>
+
+        <div>
+          <p className="font-sans font-bold text-2xl text-center">¿Por qué estudiar programación?</p>
+          <br/>
+        </div>
+
 
         <div className="flex align-top justify-center sm:justify-end">
           <Image  className="border-white border-2" width={250} alt="2126693798" radius="sm" src="/message2.jpg"/>
         </div>
 
         <div>
-          <p className="font-sans font-bold text-2xl text-center">Por qué estudiar programación</p>
-          <br/>
-
           <div className="mb-4 font-sans font-thin mx-0 md:mx-10">
-            <ul className="list-none pl-2">
+            <ul className="list-none">
               {textos2.map((item, index) => (
                 <li key={index}>
-                  <div className="flex flex-row">
-                    <div className="before:content-[''] before:mr-1"></div>
-                    <div className="mr-3">
-                      {item} {<br/>} {<br/>}
-                    </div>
-                  </div>
+                    <a className="text-left font-sans font-bold"> {item.titulo} </a>
+                    <a className="text-left font-sans font-thin"> {item.texto} </a><br/><br/>
                 </li>
               ))}
             </ul>
           </div>
         </div>
+
 
         <div className="flex align-top justify-center sm:justify-end">
           <Image  className="border-white border-2" width={250} alt="2126693798" radius="sm" src="/message3.jpg"/>
@@ -161,15 +164,11 @@ export default function Home() {
 
         <div>
         <div className="mb-4 font-sans font-thin mx-0 md:mx-10">
-            <ul className="list-none pl-2">
+            <ul className="list-none">
               {textos3.map((item, index) => (
                 <li key={index}>
-                  <div className="flex flex-row">
-                    <div className="before:content-[''] before:mr-1"></div>
-                    <div className="mr-3">
-                      {item} {<br/>} {<br/>}
-                    </div>
-                  </div>
+                    <a className="text-left font-sans font-bold"> {item.titulo} </a>
+                    <a className="text-left font-sans font-thin"> {item.texto} </a><br/><br/>
                 </li>
               ))}
             </ul>

@@ -37,7 +37,7 @@ export default function NavBar () {
             <NavbarMenu className="bg-black">
                 {menuItems.map((item, index) => (
                     <NavbarMenuItem key={`${item}-${index}`} className="bg-black">
-                        <Link   className={index == menuItems.length - 1 ? 
+                        <Link   className={index === menuItems.length - 1 ? 
                                 "w-40  color_1 font-bold border-white justify-center items-center border-2 rounded-xl" :
                                 "w-40  color_2 font-bold border-white justify-center items-center border-2 rounded-xl"}
                                 style={{ padding: '0px', margin: '0px' }}

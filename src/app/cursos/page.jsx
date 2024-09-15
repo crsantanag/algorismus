@@ -154,7 +154,7 @@ const cursos = () => {
                                     src="/card5.jpg"
                                     />
                                 <div className="flex flex-col">
-                                    <a href="https://www.python.org/"> <FontAwesomeIcon icon={faPython} className="w-14 h-14 m-2" size="2xl" style={{color: "#FFD43B",}} /> </a> 
+                                    <a href="https://www.python.org/"> <FontAwesomeIcon icon={faPython} className="w-14 h-14 m-2" size="2xl" style={{color: "#FFD43B"}} /> </a> 
                                     <div className="w-14 h-14 m-2">
                                         <a href="https://www.djangoproject.com/"> <Image  src="/svg/django-icon-svgrepo-com.svg" alt="Django Icon"/> </a>
                                     </div>

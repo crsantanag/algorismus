@@ -23,6 +23,11 @@
     backdrop-filter: blur(10px);
 }
 
+.image-container {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
 .centrar {
     display: flex;
     justify-items: center;
