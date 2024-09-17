@@ -24,10 +24,9 @@ export default function Carrusel () {
     <div className="relative w-full">
       <div className="flex overflow-hidden">
         {images.map((image, index) => (
-          <div
+          <div 
             key={index}
-            className={`transition-opacity duration-500 ${index === activeIndex ? 'opacity-100' : 'opacity-0'}`}
-          >
+            className={`transition-opacity duration-500 ${index === activeIndex ? 'opacity-100' : 'opacity-0'}`}>
             <Image src={image.src} alt={image.alt} className="object-cover" />
           </div>
         ))}

@@ -32,7 +32,7 @@ export async function POST(request) {
             from: username,
             to: myEmail,
             replyTo: email,
-            subject: `*** Algorismus *** De: ${name}`,
+            subject: `*** Algorismus ***`,
             html: `
             <p>Nombre: ${name} </p>
             <p>Email: ${email} </p>

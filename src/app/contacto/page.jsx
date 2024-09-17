@@ -112,7 +112,7 @@ export default function Contacto () {
                             { espera     &&  <CircularProgress /> }
                             </ModalBody>
                             { exito     &&  
-                            <ModalFooter className="bg-black text-white mb-4 rounded-md text-center items-center leading-6">
+                            <ModalFooter className="bg-black text-white mb-4 rounded-xl text-center items-center leading-6">
                                 <p className="pt-1">Mensaje enviado exitosamente</p>
                                 <Button className="leading-7"onPress={onClose}>
                                     Cerrar
@@ -120,7 +120,7 @@ export default function Contacto () {
 
                             </ModalFooter> }
                             { error    &&  
-                            <ModalFooter className="bg-black text-white mb-4 rounded-md text-center items-center leading-6">
+                            <ModalFooter className="bg-black text-white mb-4 rounded-xl text-center items-center leading-6">
                                 <p>No se pudo enviar el mensaje <br/>
                                 inténtalo nuevamente</p>
                                 <Button onPress={onClose}>
