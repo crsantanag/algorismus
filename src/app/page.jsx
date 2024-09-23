@@ -89,7 +89,7 @@ export default function Home() {
             <AccordionItem className='text-left bg-slate-600 text-white' key="1" aria-label="Accordion 1" title="¿Qué es Algorismus?">
               <p className='font-thin font-sans'>  {defaultContent[0]} </p>
             </AccordionItem>
-            <AccordionItem className='text-left bg-slate-600 text-white' key="2" aria-label="Accordion 2" title="¿Para qué edad es?">
+            <AccordionItem className='text-left bg-slate-600 text-white' key="2" aria-label="Accordion 2" title="¿A quiénes está orientado?">
               <p className='font-thin font-sans'> {defaultContent[1]} </p>
             </AccordionItem>
             <AccordionItem className='text-left bg-slate-600 text-white' key="3" aria-label="Accordion 3" title="¿Cómo son las clases?">
