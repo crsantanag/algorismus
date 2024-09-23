@@ -57,7 +57,7 @@ const nosotros = () => {
                         </div>
                     </div>
 
-                    <div className="w-full flex flex-col px-2 md:px-4 pb-5" >
+                    <div className="w-full flex flex-col px-2 md:px-4 pb-5 sm:hidden md:hidden lg:flex">
                         <Image  className="border-white border-2 rounded-2xl"
                                 src="nosotros.jpg"
                                 alt="Nosotros" />

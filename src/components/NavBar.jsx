@@ -53,8 +53,9 @@ export default function NavBar () {
                 <Image src="/logo.jpg" width={80} height={80} alt="Logo"/>
             </Link>
 
-            <span className="font-thin text-2xl md:text-2xl lg:text-4xl xl:text-6xl mx-auto"> A l g o r i s m u s </span>
-            
+            <span className="hidden md:flex md:text-2xl lg:text-4xl xl:text-6xl mx-auto"> A l g o r i s m u s </span>
+            <span className="font-thin text-2xl md:hidden mx-auto">Algorismus</span>
+
             <NavbarContent className="mx-0 px-0 md:hidden" justify="end">
                 <div className="flex flex-col h-14 text-center items-center">
                     <NavbarMenuToggle   aria-label={isMenuOpen ? "Close menu" : "Open menu"} 
