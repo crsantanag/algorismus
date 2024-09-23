@@ -1,21 +1,23 @@
 'use client'
-import { Link, Image }   from "@nextui-org/react"
+import { Link, Image, useDateInput }   from "@nextui-org/react"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
 import "../assets/styles.css";
+import { InsertInvitationSharp } from "@mui/icons-material";
 
 const nosotros = () => {
 
     const items1 = [
-    "ALGORISMUS LEARNING surge como respuesta a la creciente necesidad de formar a los jóvenes en habilidades esenciales para el mundo digital. Nos centramos en desarrollar competencias claves en programación, resolución de problemas y pensamiento lógico, esenciales para un futuro donde la tecnología marca la diferencia.",
-    "Nuestro enfoque es práctico, dirigido a dotar a los jóvenes de las herramientas necesarias para enfrentar los desafíos tecnológicos de hoy y del mañana.",
-    "En un mundo donde la presencia digital es fundamental, poseer habilidades en programación no es solo una ventaja competitiva, sino una necesidad, como bien lo expresó Bill Gates: Si tu negocio no está en Internet, no existe."
+    <span><strong>ALGORISMUS LEARNING </strong> surge como respuesta a la creciente necesidad de formar a los jóvenes en habilidades esenciales para el mundo digital. Nos centramos en desarrollar <strong> competencias </strong> claves en programación, resolución de problemas y pensamiento lógico, esenciales para un futuro donde la tecnología marca la diferencia.</span>,
+    'Nuestro enfoque es práctico, dirigido a dotar a los jóvenes de las herramientas necesarias para enfrentar los desafíos tecnológicos de hoy y del mañana.',
+    <span>En un mundo donde la presencia digital es fundamental, poseer <strong> competencias </strong> en programación no es solo una ventaja competitiva, sino una necesidad.</span>,
+    '"Cuando se innova, tiene que estar preparado para la gente que le dice que Ud. está loco" - Larry Ellison, CEO Oracle.'
     ];
 
     const items2 = [
     "Es ingeniero en Computación e Informática de la Universidad de Concepción y también ingeniero Civil Industrial de la misma Universidad, además de contar con un Magíster en Administración de Empresas (MBA) de la Universidad del Desarrollo", 
     "Tiene más de 30 años de experiencia en la dirección y gestión estratégica de pequeñas y medianas empresas. Ha actualizado y ampliado sus conocimientos en los últimos años, adquiriendo nuevas competencias en el área de Desarrollo Web Full Stack con tecnologías como JavaScript, Ruby  on Rails y Python.",
-    "Recientemente crea la escuela de programación ALGORISMUS, cuyo objetivo es proporcionar a jóvenes las competencias y habilidades necesarias para comenzar a navegar en el fascinante mundo del desarrollo de aplicaciones web y móviles, así como también del análisis de datos."
+    <span>Recientemente crea la escuela de programación <strong>ALGORISMUS</strong>, cuyo objetivo es proporcionar a jóvenes las <strong>competencias</strong> y habilidades necesarias para comenzar a navegar en el fascinante mundo del desarrollo de aplicaciones web y móviles, así como también del análisis de datos.</span>
     ];
 
     const items3 = [

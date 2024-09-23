@@ -75,8 +75,8 @@ export default function Home() {
               <p className='text-left font-ligth font-sans'>“Todo el mundo debería aprender a programar un computador, aprender un lenguaje de programación, porque te enseña a pensar.”</p>
           </div>
           <div className="w-full md:w-1/2 flex flex-col font-light text-xl pt-8 md:pt-0 mx-4 md:mx-10">
-            <p className='text-left font-bold font-sans'>Arthur C. Clarke</p>
-            <p className='text-left font-ligth font-sans' >“Los microprocesadores se están metiendo en todo. En un futuro cercano no habrá ningún accesorio -salvo una escoba, acaso- que no tenga un procesador dentro.”</p>
+            <p className='text-left font-bold font-sans'>Bill Gates</p>
+            <p className='text-left font-ligth font-sans'>“Habrá dos tipos de negocios en el siglo XXI, aquellos que estén en Internet y aquellos que ya no existan.”</p>
           </div>
         </div>
       </div>
