@@ -58,7 +58,7 @@ export default function NavBar () {
             <NavbarContent className="mx-0 px-0 md:hidden" justify="end">
                 <div className="flex flex-col h-14 text-center items-center">
                     <NavbarMenuToggle   aria-label={isMenuOpen ? "Close menu" : "Open menu"} 
-                                        icon={isMenuOpen ? <Close className="font-thin text-3xl border-2 rounded-full" /> : <MenuTwoTone  className="font-thin text-3xl border-2" />} 
+                                        icon={isMenuOpen ? <Close className="font-thin text-3xl border-2 rounded-full" /> : <MenuTwoTone  className="font-thin text-3xl" />} 
                                         className="mt-auto text-white border-white">
                     </NavbarMenuToggle>
                 </div>

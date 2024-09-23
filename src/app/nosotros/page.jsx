@@ -11,7 +11,7 @@ const nosotros = () => {
     <span key="1"><strong>ALGORISMUS LEARNING </strong> surge como respuesta a la creciente necesidad de formar a los jóvenes en habilidades esenciales para el mundo digital. Nos centramos en desarrollar <strong> competencias </strong> claves en programación, resolución de problemas y pensamiento lógico, esenciales para un futuro donde la tecnología marca la diferencia.</span>,
     <span key="2">Nuestro enfoque es práctico, dirigido a dotar a los jóvenes de las herramientas necesarias para enfrentar los desafíos tecnológicos de hoy y del mañana.</span>,
     <span key="3">En un mundo donde la presencia digital es fundamental, poseer <strong> competencias </strong> en programación no es solo una ventaja competitiva, sino una necesidad.</span>,
-    <span key="4">"Cuando se innova, tiene que estar preparado para la gente que le dice que Ud. está loco" - Larry Ellison, CEO Oracle.</span>
+    <span key="4">&quot;Cuando se innova, tiene que estar preparado para la gente que le dice que Ud. está loco&quot; - Larry Ellison, CEO Oracle.</span>
     ];
 
     const items2 = [
